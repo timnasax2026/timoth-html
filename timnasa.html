@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMNASA BOT | DEPLOYMENT HUB</title>
+    <style>
+        :root { --primary: #00ffcc; --dark: #050505; --card: #121212; --text: #ffffff; }
+        body { font-family: 'Poppins', sans-serif; background: var(--dark); color: var(--text); margin: 0; padding: 20px; }
+        header { text-align: center; padding: 60px 0; border-bottom: 2px solid var(--primary); background: linear-gradient(to bottom, #111, var(--dark)); }
+        h1 { color: var(--primary); font-size: 2.5rem; text-transform: uppercase; margin: 0; text-shadow: 0 0 10px var(--primary); }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        
+        .section { background: var(--card); padding: 40px; border-radius: 20px; text-align: center; margin-bottom: 40px; border: 1px solid #222; }
+        .btn-main { background: var(--primary); color: black; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.2rem; display: inline-block; transition: 0.3s; }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4); }
+
+        .deploy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .deploy-card { background: #1a1a1a; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #333; transition: 0.3s; }
+        .deploy-card:hover { border-color: var(--primary); background: #222; }
+        .btn-sm { color: var(--primary); text-decoration: none; border: 1px solid var(--primary); padding: 5px 15px; border-radius: 5px; font-size: 0.8rem; }
+        .btn-sm:hover { background: var(--primary); color: black; }
+
+        footer { text-align: center; margin-top: 50px; color: #555; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TIMNASA BOT CENTER</h1>
+    <p>Professional Deployment Dashboard for I Am Legend V2</p>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>STEP 1: GET SESSION ID</h2>
+        <p>You must pair your number to get the ID before deploying.</p>
+        <br>
+        <a href="https://pairing-web-su41.onrender.com/" class="btn-main">PAIR WHATSAPP NOW 📲</a>
+    </div>
+
+    <h2 style="text-align: center; color: var(--primary);">STEP 2: CHOOSE DEPLOYMENT SERVER</h2>
+    <div class="deploy-grid">
+        <script>
+            const servers = ["Render", "Heroku", "Railway", "Koyeb", "Replit", "Fly.io", "Vercel", "Netlify", "Google Cloud", "AWS", "Oracle", "DigitalOcean", "Azure", "Hugging Face", "Codespaces"];
+            const links = ["https://dashboard.render.com", "https://dashboard.heroku.com", "https://railway.app", "https://app.koyeb.com", "https://replit.com", "https://fly.io", "https://vercel.com", "https://netlify.com", "https://cloud.google.com", "https://aws.amazon.com", "https://oracle.com", "https://digitalocean.com", "https://azure.com", "https://huggingface.co", "https://github.com/codespaces"];
+            
+            for(let i=0; i<servers.length; i++) {
+                document.write(`
+                    <div class="deploy-card">
+                        <h3>${servers[i]}</h3>
+                        <a href="${links[i]}" class="btn-sm" target="_blank">Deploy Here</a>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 TIMNASA TECH | STANY TZ POWERED</p>
+</footer>
+
+</body>
+</html>
