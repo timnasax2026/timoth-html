@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: timnasa-bot-site
+    env: static
+    buildCommand: ""
+    publishPath: "."
